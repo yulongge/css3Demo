@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"></meta>
+<style> 
+body{margin:0;padding: 0;}
+div{margin:10px;}
+.workplace{
+    width:600px;
+    margin:0 auto;
+}
+.borderRadius{
+    text-align:center;
+    border:2px solid #a1a1a1;
+    padding:10px 40px; 
+    background:#dddddd;
+    width:350px;
+    border-radius:25px;
+    -moz-border-radius:25px;
+}
+.borderShadow{
+    width:200px;
+    height:100px;
+    background: blue;
+    box-shadow:10px 10px 5px #565656;
+    -moz-box-shadow:10px 10px 5px #565656;
+}
+.polaroid{
+    margin:30px;
+    width: 310px;
+    padding: 10px 10px 20px 10px;
+    border:1px solid #bfbfbf;
+    background-color:white;
+    box-shadow:2px 2px 3px #aaaaaa;
+    text-align: center;
+}
+.rotate_left{
+    -ms-transform:rotate(7deg);
+    -moz-transform:rotate(7deg);
+    -webkit-transform:rotate(7deg);
+    -o-transform:ratate(7deg);
+    transform:ratate(7deg);
+}
+.textCon{
+    width: 300px;
+    height:125px;
+    border:1px solid #565656;
+    -moz-border-radius:20px;
+    border-radius:20px;
+}
+.textCon p{
+    font-size: 30px;
+    text-shadow:25px 25px 5px #ff0000;
+}
+
+.div_translate{width:200px;height:100px;border:1px solid #565656;}
+.trans2{
+    -moz-transform:translate(100px,30px);
+    -webkit-transform:translate(100px,30px);
+    -o-transform:translate(100px,30px);
+    -ms-transform:translate(100px,30px);
+    transform:translate(100px,30px);
+}
+
+.rotateCon{width:500px;border:1px solid #565656;position: relative;height:400px;margin-top:50px;}
+.rotateCon div{
+    position: absolute;
+    width:300px;
+    height:173px;
+    border:1px solid #565656;
+    top:100px;
+    left:85px;
+    box-shadow:-5px -4px 5px #565656;
+}
+.rotateCon .item2{
+    -ms-transform:rotate(30deg);
+    -moz-transform:rotate(30deg);
+    -webkit-transform:rotate(30deg);
+    -o-transform:rotate(30deg);
+    transform:rotate(30deg);
+}
+.rotateCon .item3{
+    -ms-transform:rotate(60deg);
+    -moz-transform:rotate(60deg);
+    -webkit-transform:rotate(60deg);
+    -o-transform:rotate(60deg);
+    transform:rotate(60deg);
+}
+.rotateCon .item4{
+    -ms-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    transform:rotate(90deg);
+}
+.rotateCon .item5{
+    -ms-transform:rotate(120deg);
+    -moz-transform:rotate(120deg);
+    -webkit-transform:rotate(120deg);
+    -o-transform:rotate(120deg);
+    transform:rotate(120deg);
+}
+.rotateCon .item6{
+    -ms-transform:rotate(150deg);
+    -moz-transform:rotate(150deg);
+    -webkit-transform:rotate(150deg);
+    -o-transform:rotate(150deg);
+    transform:rotate(150deg);
+}
+
+.scaleCon{width:100px;height:50px;border:1px solid #565656;}
+.toScale{
+    margin:50px;
+    -ms-transform:scale(1,2);
+    -moz-transform:scale(1,2);
+    -o-transform:scale(1,2);
+    -webkittransform:scale(1,2);
+    transform:scale(1,2);
+}
+.skewCon{width:200px;height:100px;background: yellow;border:1px solid #565656;}
+.toSkew{
+    -ms-transform:skew(30deg,30deg);
+    -o-transform:skew(30deg,30deg);
+    -moz-transform:skew(30deg,30deg);
+    -webkit-transform:skew(30deg,30deg);
+    transform:skew(30deg,30deg);
+}
+</style>
+</head>
+<body>
+<div class="workplace">
+    <!-- 圆角边框 -->
+    <div class="borderRadius">border-radius发送到发送到</div>
+    <!-- 阴影 -->
+    <div class="borderShadow"></div>
+    <!-- 立体照片 -->
+    <div class="polaroid rotate_left">
+        <img src="images/photo1.jpg" alt="骑马" width="300" height="400"/>
+        <p class="caption">草原奔驰</p>
+    </div>
+
+    <!-- 文本修饰 -->
+    <div class="textCon">
+        <p>所有的一切早就已经是</p>
+    </div>
+
+    <!-- 2D效果 -->
+    <div class="div_translate trans1"></div>
+    <div class="div_translate trans2"></div>
+
+    <div class="rotateCon">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+        <div class="item6"></div>
+
+    </div>
+
+    <div class="scaleCon"></div>
+    <div class="scaleCon toScale"></div>
+
+    <div class="skewCon"></div>
+    <div class="skewCon toSkew"></div>
+</div>
+</body>
+</html>
